@@ -1,0 +1,44 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(15, 15, 15, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+  
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+  
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+  
+.creative-button {
+    background: none;
+    color: white;
+    /* width: 32px;
+    height: 32px; */
+    cursor: pointer;
+}
+  
+.creative-menu {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 16px;
+}

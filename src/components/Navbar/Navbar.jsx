@@ -1,7 +1,9 @@
 import { useState } from "react"
+import { HiOutlineMenu } from "react-icons/hi"
+import "./Navbar.css"
 
 function Navbar() {
-  const [showCreative, setShowCreative] = useState(false)
+  const [showHiddenNav, setHiddenNav] = useState(false)
 
   return (
     <nav className="navbar">
@@ -11,17 +13,18 @@ function Navbar() {
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
 
         <button
           className="creative-button"
-          onClick={() => setShowCreative(!showCreative)}
+          onClick={() => setHiddenNav(!showHiddenNav)}
         >
-          ✦
+          <HiOutlineMenu />
         </button>
       </div>
 
-      {showCreative && (
+      {showHiddenNav && (
         <div className="creative-menu">
           <p>Running</p>
           <p>Art</p>
